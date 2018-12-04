@@ -12,7 +12,7 @@ add bridge=br-masterport client-to-client-forwarding=no local-forwarding=no name
 /caps-man rates add basic=12Mbps name=Rates1 supported=12Mbps,18Mbps,24Mbps,36Mbps,48Mbps,54Mbps
 /caps-man configuration
 add country="united states3" datapath=datapath1 distance=indoors mode=ap name=HOMEW1F1 rates=Rates1 rx-chains=0,1,2 ssid=HOMEW1F1 tx-chains=0,1,2
-add country="united states3" datapath=guestdatapath1 datapath.local-forwarding=yes hide-ssid=yes mode=ap name=HOMEW1F1-GUEST rates=Rates1 ssid=HOMEW1F1-GUEST
+add country="united states3" datapath=guestdatapath1 hide-ssid=yes mode=ap name=HOMEW1F1-GUEST rates=Rates1 ssid=HOMEW1F1-GUEST
 /caps-man security
 add authentication-types=wpa-psk,wpa2-psk encryption=aes-ccm group-encryption=aes-ccm name=InfraWPA passphrase=fakepassword
 /caps-man configuration
